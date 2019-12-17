@@ -1,0 +1,25 @@
+/*
+ * @lc app=leetcode.cn id=75 lang=golang
+ *
+ * [75] 颜色分类
+ */
+
+// @lc code=start
+func sortColors(nums []int) {
+	lenNum := len(nums)
+	p0, cur, p2 := 0, 0, lenNum-1
+	for cur <= p2 {
+		if nums[cur] == 2 {
+			nums[cur], nums[p2] = nums[p2], nums[cur]
+			p2--
+		} else if nums[cur] == 0 {
+			nums[cur], nums[p0] = nums[p0], nums[cur]
+			p0++
+			cur++
+		} else {
+			cur++
+		}
+	}
+}
+// @lc code=end
+
