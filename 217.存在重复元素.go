@@ -5,6 +5,9 @@
  */
 
 // @lc code=start
+// 18/18 cases passed (16 ms)
+// Your runtime beats 100 % of golang submissions
+// Your memory usage beats 99.59 % of golang submissions (6 MB)
 func containsDuplicate(nums []int) bool {
 	lenNum := len(nums)
 	numMap := make(map[int]struct{}, lenNum)

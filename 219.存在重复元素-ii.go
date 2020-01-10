@@ -5,6 +5,9 @@
  */
 
 // @lc code=start
+// 23/23 cases passed (12 ms)
+// Your runtime beats 98.23 % of golang submissions
+// Your memory usage beats 58.54 % of golang submissions (6.6 MB)
 func containsNearbyDuplicate(nums []int, k int) bool {
 	lenNum := len(nums)
 	numMap := make(map[int]int, lenNum/2)
